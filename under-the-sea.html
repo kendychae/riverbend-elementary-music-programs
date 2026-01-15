@@ -9,8 +9,11 @@
 <body>
   <header>
     <h1>Riverbend Elementary Music Program</h1>
+    <button class="hamburger" aria-label="Open navigation" aria-controls="mainnav" aria-expanded="false" onclick="document.body.classList.toggle('nav-open');this.setAttribute('aria-expanded',document.body.classList.contains('nav-open'))">
+      <span></span><span></span><span></span>
+    </button>
     <nav>
-      <ul>
+      <ul id="mainnav">
         <li><a href="index.html">Home</a></li>
         <li><a href="mary-poppins.html">Mary Poppins</a></li>
         <li><a href="under-the-sea.html" aria-current="page">Under the Sea</a></li>
@@ -24,32 +27,28 @@
       <p><strong>Date:</strong> April 15, 2026 &nbsp; | &nbsp; <strong>Time:</strong> 9:30 AM</p>
       <ol>
         <li>“A Sailor Went to Sea” – Loo Loo Kids<br>
-          <video width="420" height="236" controls>
-            <source src="https://share.google/DAQV9sR1PqNCtMc52" type="video/mp4">
-            Your browser does not support the video tag. 
-          </video><br>
-          <a href="https://share.google/DAQV9sR1PqNCtMc52" target="_blank" rel="noopener">Watch Video</a>
+          <div class="video-fallback">
+            <span>Video cannot be embedded. Please use the link below:</span>
+            <a href="https://share.google/DAQV9sR1PqNCtMc52" target="_blank" rel="noopener">Watch Video</a>
+          </div>
         </li>
         <li>“Octopus’s Garden” – Billy’s World<br>
-          <video width="420" height="236" controls>
-            <source src="https://share.google/sEfTlGQXHT5AMg48Y" type="video/mp4">
-            Your browser does not support the video tag. 
-          </video><br>
-          <a href="https://share.google/sEfTlGQXHT5AMg48Y" target="_blank" rel="noopener">Watch Video</a>
+          <div class="video-fallback">
+            <span>Video cannot be embedded. Please use the link below:</span>
+            <a href="https://share.google/sEfTlGQXHT5AMg48Y" target="_blank" rel="noopener">Watch Video</a>
+          </div>
         </li>
         <li>“My Bonnie” – Countdown Kids<br>
-          <video width="420" height="236" controls>
-            <source src="https://share.google/nRABXHn0ON6weCnSH" type="video/mp4">
-            Your browser does not support the video tag. 
-          </video><br>
-          <a href="https://share.google/nRABXHn0ON6weCnSH" target="_blank" rel="noopener">Watch Video</a>
+          <div class="video-fallback">
+            <span>Video cannot be embedded. Please use the link below:</span>
+            <a href="https://share.google/nRABXHn0ON6weCnSH" target="_blank" rel="noopener">Watch Video</a>
+          </div>
         </li>
         <li>“Yellow Submarine” – Mr. Ray / Sunshine Kids<br>
-          <video width="420" height="236" controls>
-            <source src="https://share.google/zP0ts3R7ByReuAhdh" type="video/mp4">
-            Your browser does not support the video tag. 
-          </video><br>
-          <a href="https://share.google/zP0ts3R7ByReuAhdh" target="_blank" rel="noopener">Watch Video</a>
+          <div class="video-fallback">
+            <span>Video cannot be embedded. Please use the link below:</span>
+            <a href="https://share.google/zP0ts3R7ByReuAhdh" target="_blank" rel="noopener">Watch Video</a>
+          </div>
         </li>
       </ol>
     </section>
