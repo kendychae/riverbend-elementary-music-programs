@@ -1,0 +1,126 @@
+/*
+  Riverbend Elementary Music Program Website
+  Professional, accessible, dark-themed design
+*/
+
+:root {
+  --primary-bg: #181a1b;
+  --secondary-bg: #232526;
+  --primary-text: #f5f5f5;
+  --accent: #4fc3f7;
+  --nav-bg: #222325;
+  --nav-link: #f5f5f5;
+  --nav-link-active: #4fc3f7;
+  --card-bg: #232526;
+  --border-radius: 10px;
+  --focus-outline: 2px solid #4fc3f7;
+}
+
+html {
+  font-size: 18px;
+  background: var(--primary-bg);
+  color: var(--primary-text);
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: var(--primary-bg);
+  color: var(--primary-text);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: var(--nav-bg);
+  padding: 1.5rem 0 1rem 0;
+  text-align: center;
+  border-bottom: 1px solid #333;
+}
+
+header h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav a {
+  color: var(--nav-link);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 5px;
+  transition: background 0.2s, color 0.2s;
+}
+
+nav a[aria-current="page"],
+nav a:hover,
+nav a:focus {
+  color: var(--nav-link-active);
+  background: #333;
+  outline: var(--focus-outline);
+}
+
+main {
+  flex: 1;
+  max-width: 700px;
+  margin: 2rem auto 0 auto;
+  padding: 1.5rem;
+  background: var(--secondary-bg);
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+}
+
+h2, h3 {
+  color: var(--accent);
+  margin-top: 0;
+}
+
+.welcome p {
+  margin-bottom: 1.2rem;
+}
+
+.director {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.program-dates ul {
+  padding-left: 1.2rem;
+}
+
+footer {
+  background: var(--nav-bg);
+  color: #aaa;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 1rem;
+  border-top: 1px solid #333;
+  margin-top: 2rem;
+}
+
+/* Accessibility */
+a:focus {
+  outline: var(--focus-outline);
+}
+
+@media (max-width: 800px) {
+  main {
+    max-width: 98vw;
+    padding: 1rem;
+  }
+  nav ul {
+    gap: 1rem;
+  }
+}
