@@ -74,12 +74,34 @@
   header {
     padding: 0.5rem 0 0.5rem 0;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background: var(--nav-bg);
+  }
+  .header-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 0.5rem;
+    box-sizing: border-box;
+  }
+  h1 {
+    font-size: 1.1rem;
+    margin: 0.5rem 0 0.5rem 0;
+    padding: 0;
+    flex: 1 1 auto;
+    text-align: left;
+    word-break: break-word;
   }
   .hamburger {
     display: flex;
-    position: absolute;
-    right: 0.5rem;
-    top: 0.5rem;
+    position: static;
+    margin-left: 0.5rem;
+    margin-right: 0;
+    align-self: flex-start;
   }
   nav ul {
     display: none;
