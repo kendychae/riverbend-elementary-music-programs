@@ -154,17 +154,6 @@ footer {
   margin-top: 2rem;
 }
 
-.nav-backdrop {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0,0,0,0.4);
-  z-index: 2000;
-}
-
 @media (min-width: 801px) {
   nav ul {
     display: flex;
@@ -197,22 +186,18 @@ footer {
     gap: 0;
     align-items: flex-start;
     background: var(--nav-bg);
-    position: fixed;
-    top: 0;
+    position: absolute;
+    top: 100%;
     left: 0;
-    width: 100vw;
-    height: 100vh;
-    padding: 1.5rem 0 1rem 0;
+    width: 100%;
+    height: auto;
+    padding: 0;
     z-index: 2001;
     box-shadow: 0 2px 8px rgba(0,0,0,0.3);
   }
 
   body.nav-open nav ul {
     display: flex !important;
-  }
-
-  body.nav-open .nav-backdrop {
-    display: block;
   }
 
   main {
