@@ -1,7 +1,7 @@
 # Riverbend Elementary Music Program Website
 
 This project is a professional, public-facing website for Riverbend Elementary School’s Music Program, designed for parents, staff, and students. It features a modern, accessible, dark-themed design, clear navigation, and dedicated pages for each music program.
-
+**Live Site:** https://kendychae.github.io/riverbend-elementary-music-programs/
 ## Features
 - Homepage with program overview and Music Director (Mrs. Bingham)
 - Navigation menu for easy access to all pages
